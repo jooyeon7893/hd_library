@@ -1,0 +1,12 @@
+@font-face{
+    font-family: youandi;
+    src:url('font/YouandiModernTR.eot');
+    src:local(※), url('font/YouandiModernTR.woff') format('woff');
+}    
+
+* {box-sizing: border-box; font-family: youandi;}
+header {background: #000; width: 100%; height: 70px;}
+header .head {width: 1200px; margin: auto;}
+header .head h1 a img {display: block; float: left; margin-top: 15px;}
+header .head .gnb {display: flex; width: 800px; justify-content: space-around; margin: auto;}
+header .head .gnb li a {color: #fff; font-size: 20px; font-weight: bold; line-height: 70px;}
