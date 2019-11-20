@@ -4,14 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="swiper.min.js"></script>
+    <script src="script.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
+    <script src="imagesloaded.pkgd.min.js"></script>
+    <title>현대카드 LIBRARY</title>
+    <style>
+        .swiper-container {width: 100%; height: 100%;}
+        .swiper-slide {display: flex; justify-content: center; align-items: center;}
+
+        .swiper-pagination-bullet {
+            width: 50px;
+            height: 5px;
+            border-radius: 0;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .swiper-pagination-bullet-active {background: #fff;}
+    </style>
 </head>
 <body>
-    <h1>library</h1>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <header>
+        <div class="head">
+            <h1><a href="#"><img src="img/head_logo.png" alt=""></a></h1>
+            <ul class="gnb">
+                <li><a href="#sect1">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BOOKS</a></li>
+                <li><a href="#sect4">PROGRAM</a></li>
+                <li><a href="#">VISIT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="sect1">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text_box">
+                        <h2>현대카드<br><span>DESIGN<br>LIBRARY</span></h2>
+                        <p class="title">몰입의 시간 + 영감의 공간</p>
+                        <p class="text">책을 매개로 잊혀졌던 삶의 가치를 회복하고 몰입의 시간을 통해<br>지적인 영감을 얻을 수 있는 공간, 이것이 현대카드가 지향하는 디자인라이브러리의 모습이다.</p>
+                        <div class="btns">
+                            <div class="btn">더 알아보기 <i></i></div>
+                            <div class="btn">360 VR 둘러보기 <i></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="text_box">
+                        <h2>현대카드<br><span>TRAVEL<br>LIBRARY</span></h2>
+                        <p class="title">발견의 시간 + 영감의 공간</p>
+                        <p class="text">남과 다른 자신만의 발견을 통해 삶의 방식은 물론<br>세계를 바라보는 시각까지 변화할 수 있는 공간, 바로 현대카드 트래블 라이브러리다.</p>
+                        <div class="btns">
+                            <div class="btn">더 알아보기 <i></i></div>
+                            <div class="btn">360 VR 둘러보기 <i></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="text_box">
+                        <h2>현대카드<br><span>MUSIC<br>LIBRARY</span></h2>
+                        <p class="title">울림의 시간 + 영감의 공간</p>
+                        <p class="text">바이닐은 무형의 음악을 보고 만지고 들으면서 그 정수를 확인할 수 있는 매체로서 책과 바이닐로 완성된<br>현대카드 뮤직 라이브러리는 음악에서 비롯한 울림을 일상의 영감으로 끌어올리는 공간이다.</p>
+                        <div class="btns">
+                            <div class="btn">더 알아보기 <i></i></div>
+                            <div class="btn">360 VR 둘러보기 <i></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="text_box">
+                        <h2>현대카드<br><span>COOKING<br>LIBRARY</span></h2>
+                        <p class="title">채움의 시간 + 영감의 공간</p>
+                        <p class="text">먹거리에 대한 말들이 넘쳐나는 요즘이지만 미식을 깊게 다루는 이야기는 여전히 부족하다.<br>그래서 현대카드는 맛을 경험하는 다양한 방법을 제안하면서<br>새롭고 흥미로운 대화에 불을 지피고자 쿠킹 라이브러리를 선보인다.</p>
+                        <div class="btns">
+                            <div class="btn">더 알아보기 <i></i></div>
+                            <div class="btn">360 VR 둘러보기 <i></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="sect2">
+    </section>
+
+    <section id="sect3">
+    </section>
+
+    <section id="sect4">
+        <h2>Program</h2>
+
+        <ul class="filt">
+            <li data-filter="*">ALL</li>
+            <li data-filter=".talk">TALK</li>
+            <li data-filter=".exhi">EXHIBITION</li>
+            <li data-filter=".ment">MENTOR</li>
+            <li data-filter=".cook">COOKING CLASS</li>
+        </ul>
+    
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item talk"><img src="img/program_talk_1.jpg"></div>            
+            <div class="grid-item exhi"><img src="img/program_exhi_1.jpg"></div>       
+            <div class="grid-item exhi"><img src="img/program_exhi_2.jpg"></div>      
+            <div class="grid-item talk"><img src="img/program_talk_2.jpg"></div>
+            <div class="grid-item talk"><img src="img/program_talk_3.jpg"></div>
+            <div class="grid-item ment"><img src="img/program_ment_1.jpg"></div>
+            <div class="grid-item talk"><img src="img/program_talk_4.jpg"></div>
+            <div class="grid-item talk"><img src="img/program_talk_5.jpg"></div>
+            <div class="grid-item ment"><img src="img/program_ment_2.jpg"></div>
+            <div class="grid-item talk"><img src="img/program_talk_6.jpg"></div>
+            <div class="grid-item exhi"><img src="img/program_exhi_3.jpg"></div> 
+            <div class="grid-item talk"><img src="img/program_talk_7.jpg"></div>
+            <div class="grid-item ment"><img src="img/program_ment_3.jpg"></div>
+            <div class="grid-item cook"><img src="img/program_cooking_1.jpg"></div>
+            <div class="grid-item talk"><img src="img/program_talk_9.jpg"></div>
+            <div class="grid-item exhi"><img src="img/program_exhi_4.jpg"></div> 
+            <div class="grid-item cook"><img src="img/program_cooking_2.jpg"></div>
+            <div class="grid-item cook"><img src="img/program_cooking_3.jpg"></div>
+            <div class="grid-item talk"><img src="img/program_talk_10.jpg"></div>
+            <div class="grid-item ment"><img src="img/program_ment_4.jpg"></div>
+        </div>
+    </section>
+
+    <section id="sect5">
+    </section>
 </body>
 </html>
