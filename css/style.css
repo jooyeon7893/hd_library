@@ -1,7 +1,7 @@
 @font-face{
     font-family: 'youandi';
-    src:url('font/YouandiModernTR.eot');
-    src:local(※), url('font/YouandiModernTR.woff') format('woff');
+    src:url('../font/YouandiModernTR.eot');
+    src:local(※), url('../font/YouandiModernTR.woff') format('woff');
 }    
 
 * {box-sizing: border-box; font-family: 'youandi';}
@@ -11,15 +11,16 @@ section {width: 100%; height: 100vh;}
 
 header {background: #000; width: 100%; height: 70px; position: fixed; z-index: 10;}
 header .head {width: 1200px; margin: auto;}
+header .head h5 {color: #fff;}
 header .head h1 a img {display: block; float: left; margin-top: 15px;}
 header .head .gnb {display: flex; width: 800px; justify-content: space-around; margin: auto;}
 header .head .gnb li a {color: #fff; font-size: 20px; font-weight: bold; line-height: 70px;}
 
 /* --------------------- sect1 ---------------------*/
-#sect1 .swiper-slide:nth-child(1) {background: url(img/dl_visual_wd.jpg);}
-#sect1 .swiper-slide:nth-child(2) {background: url(img/tl_visual_wd.jpg);}
-#sect1 .swiper-slide:nth-child(3) {background: url(img/ml_visual_wd.jpg);}
-#sect1 .swiper-slide:nth-child(4) {background: url(img/cl_visual_wd.jpg);}
+#sect1 .swiper-slide:nth-child(1) {background: url(../img/dl_visual_wd.jpg);}
+#sect1 .swiper-slide:nth-child(2) {background: url(../img/tl_visual_wd.jpg);}
+#sect1 .swiper-slide:nth-child(3) {background: url(../img/ml_visual_wd.jpg);}
+#sect1 .swiper-slide:nth-child(4) {background: url(../img/cl_visual_wd.jpg);}
 
 #sect1 .text_box {
     width: 60%;
@@ -56,13 +57,17 @@ header .head .gnb li a {color: #fff; font-size: 20px; font-weight: bold; line-he
 #sect1 .btns .btn:hover {background: #333;}
 #sect1 .btns .btn i {
     display: inline-block;
-    background: url(img/sprit_com.png) no-repeat -127px -2px;
+    background: url(../img/sprit_com.png) no-repeat -127px -2px;
     width: 6px;
     height: 9px;
     margin-left: 10px;
 }
 
 /* --------------------- sect4 ---------------------*/
+#sect2 {background: rgb(248, 192, 192);}
+#sect3 {background: rgb(203, 255, 183);}
+#sect5 {background: rgb(152, 185, 245);}
+
 #sect4 {padding-top: 100px;}
 #sect4 .grid:after {content: ''; display: block; clear: both;}
 #sect4 .grid {width: 1440px; margin: auto;}
