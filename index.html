@@ -33,13 +33,12 @@
     <header>
         <div class="head">
             <h1><a href="#"><img src="img/head_logo.png" alt=""></a></h1>
-            <h5></h5>
             <ul class="gnb">
                 <li><a href="#sect1">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">BOOKS</a></li>
+                <li><a href="#sect2">ABOUT</a></li>
+                <li><a href="#sect3">BOOKS</a></li>
                 <li><a href="#sect4">PROGRAM</a></li>
-                <li><a href="#">VISIT</a></li>
+                <li><a href="#sect5">VISIT</a></li>
             </ul>
         </div>
     </header>
@@ -110,8 +109,7 @@
         <h2>Program</h2>
 
         <ul class="filt">
-            <li data-filter="*">ALL</li>
-            <li data-filter=".talk">TALK</li>
+            <li data-filter=".talk" class="on">TALK</li>
             <li data-filter=".exhi">EXHIBITION</li>
             <li data-filter=".ment">MENTOR</li>
             <li data-filter=".cook">COOKING CLASS</li>
@@ -119,30 +117,181 @@
     
         <div class="grid">
             <div class="grid-sizer"></div>
-            <div class="grid-item talk"><img src="img/program_talk_1.jpg"></div>            
-            <div class="grid-item exhi"><img src="img/program_exhi_1.jpg"></div>       
-            <div class="grid-item exhi"><img src="img/program_exhi_2.jpg"></div>      
-            <div class="grid-item talk"><img src="img/program_talk_2.jpg"></div>
-            <div class="grid-item talk"><img src="img/program_talk_3.jpg"></div>
-            <div class="grid-item ment"><img src="img/program_ment_1.jpg"></div>
-            <div class="grid-item talk"><img src="img/program_talk_4.jpg"></div>
-            <div class="grid-item talk"><img src="img/program_talk_5.jpg"></div>
-            <div class="grid-item ment"><img src="img/program_ment_2.jpg"></div>
-            <div class="grid-item talk"><img src="img/program_talk_6.jpg"></div>
-            <div class="grid-item exhi"><img src="img/program_exhi_3.jpg"></div> 
-            <div class="grid-item talk"><img src="img/program_talk_7.jpg"></div>
-            <div class="grid-item ment"><img src="img/program_ment_3.jpg"></div>
-            <div class="grid-item cook"><img src="img/program_cooking_1.jpg"></div>
-            <div class="grid-item talk"><img src="img/program_talk_9.jpg"></div>
-            <div class="grid-item exhi"><img src="img/program_exhi_4.jpg"></div> 
-            <div class="grid-item cook"><img src="img/program_cooking_2.jpg"></div>
-            <div class="grid-item cook"><img src="img/program_cooking_3.jpg"></div>
-            <div class="grid-item talk"><img src="img/program_talk_10.jpg"></div>
-            <div class="grid-item ment"><img src="img/program_ment_4.jpg"></div>
+            <div class="grid-item talk">
+                <img src="img/program_talk_1.jpg">
+                <div class="txt">
+                    <p>기존의 샹들리에라는 조명을 재해석하여 다른 방식으로 접근하고, 2019년 마침내 컬렉션을 완성, Reflection과 작품에 대해 설명하는 시간.</p>
+                    <h3><br>- 장소 : 현대카드 DESIGN LIBRARY 1층 LOUNGE</h3>
+                </div> 
+            </div> 
+
+            <div class="grid-item exhi">
+                <img src="img/program_exhi_1.jpg">
+                <div class="txt">
+                    <p>핀란드의 혁신적인 디자인 아이콘 Eero Aarnio의 국내 첫 개인전. 디자인 철학을 한눈에 살펴볼 수 있도록 주요 작품을 중심으로 전시되어있다.</p>
+                    <h3><br>- 장소 : 현대카드 DESIGN LIBRARY</h3>
+                </div>    
+            </div>      
+
+            <div class="grid-item exhi">
+                <img src="img/program_exhi_2.jpg">
+                <div class="txt">
+                    <p>문자의 예술적 가치와 가능성을 탐색하는 이번 전시는 ‘몸과 타이포그래피’라는 주제 아래 디자인에서의 몸의 가치를 이해해보고자 한다.</p>
+                    <h3><br>- 장소 : 현대카드 DESIGN LIBRARY</h3>
+                </div>
+            </div>     
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_2.jpg">
+                <div class="txt">
+                    <p>창의적이고 추상적인 사고(Matter)를 글로 표현하고, 스케치하며 디자인하는 과정을 통해 새롭게 구현(Material)하는 프로세스에 대한 이야기.</p>
+                    <h3><br>- 장소 : 현대카드 DESIGN LIBRARY 1층 LOUNGE</h3>
+                </div>
+            </div>
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_3.jpg">
+                <div class="txt">
+                    <p>손을 움직여 나와 내 주변의 생활을 직접 일구는 것. 손쓰는 것의 가치를 통해 이 시대 진정한 ‘어른의 쓸모’에 대해 생각해보는 시간.</p>
+                    <h3><br>- 장소 : 현대카드 DESIGN LIBRARY 1층 LOUNGE</h3>
+                </div>
+            </div>
+
+            <div class="grid-item ment">
+                <img src="img/program_ment_1.jpg">
+                <div class="txt">
+                    <p>서울 대표 러닝크루 JSRC와 함께하는 가을밤 퇴근 후 러닝! 세계 여러 나라의 러닝 문화와 러너들을 위한 여행방법을 듣는 시간을 가져보자.</p>
+                    <h3><br>- 장소 : 현대카드 TRAVEL LIBRARY 1층 북카페</h3>
+                </div>
+            </div>
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_4.jpg">
+                <div class="txt">
+                    <p>미국의 라이프 스타일 브랜드 TUMI와 함께하는 특별한 Travel Talk! 다니엘 헤니와 여행 이야기를 나누며 그의 여행 캐리어를 함께 열어보자.</p>
+                    <h3><br>- 장소 : 현대카드 TRAVEL LIBRARY 1층 북카페</h3>
+                </div>
+            </div>
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_5.jpg">
+                <div class="txt">
+                    <p>이스라엘 여행을 다녀온 유민주가 전하는 여행 이야기. 그녀가 바라본 이스라엘의 반전 모습과 우리가 상상하지 못한 이스라엘에 대해 알아보자.</p>
+                    <h3><br>- 장소 : 현대카드 TRAVEL LIBRARY 1층 북카페</h3>
+                </div>
+            </div>
+
+            <div class="grid-item ment">
+                <img src="img/program_ment_2.jpg">
+                <div class="txt">
+                    <p>"인생과 여행은 신비롭다. 우리가 원하던 것을 얻지 못하고, 우리가 그 안에서 얼마든지 기쁨을 찾아내고 행복을 누리며 깊은 깨달음을 얻기 때문이다."</p>
+                    <h3><br>- 장소 : 현대카드 TRAVEL LIBRARY</h3>
+                </div>
+            </div>
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_6.jpg">
+                <div class="txt">
+                    <p>Eric Faye에게 30년 이상의 여행 경험을 통해 얻게 된 여행 작가로서의 노하우들을 배울 수 있다.</p>
+                    <h3><br>- 장소 : 현대카드 TRAVEL LIBRARY 1층 북카페</h3>
+                </div>
+            </div>
+
+            <div class="grid-item exhi">
+                <img src="img/program_exhi_3.jpg">
+                <div class="txt">
+                    <p>취리히 디자인 미술관(Museum fur Gestaltung Zurich)의 방대한 포스터 컬렉션 중에서도 손을 사용한 작품을 소개한다.</p>
+                    <h3><br>- 장소 : 현대카드 DESIGN LIBRARY</h3>
+                </div>
+            </div> 
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_7.jpg">
+                <div class="txt">
+                    <p>“음악은 삶에 영향을 미치는 것이 아니라 삶을 대하는 우리의 태도에 영향을 미친다”</p>
+                    <h3><br>- 장소 : 현대카드 MUSIC LIBRARY 1층</h3>
+                </div>
+            </div>
+
+            <div class="grid-item ment">
+                <img src="img/program_ment_3.jpg">
+                <div class="txt">
+                    <p>차갑지만 춥지 않고 차분하지만 어둡지 않은 곳, 익숙하지만 어쩐지 낯선 곳도 북유럽이다. 북유럽 영화를 바탕으로 북유럽 이야기를 만나본다.</p>
+                    <h3><br>- 장소 : 현대카드 TRAVEL LIBRARY 1층 북카페</h3>
+                </div>
+            </div>
+
+            <div class="grid-item cook">
+                <img src="img/program_cooking_1.jpg">
+                <div class="txt">
+                    <p>요리에 재능과 열정이 있는 전문가가 준비한 쿠킹 클래스가 열린다. 현대카드 회원이라면 누구나 신청을 통해 참석해서 맛있는 조언들을 얻을 수 있다.</p>
+                    <h3><br>- 장소 : 현대카드 COOKING LIBRARY 3F/4F</h3>
+                </div>
+            </div>
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_9.jpg">
+                <div class="txt">
+                    <p>궁금하지만 잘 몰랐던 내추럴 와인에 대한 이야기와 대표 와이너리 그리고 내추럴 와인 4종 테이스팅까지, 특별한 시간에 당신을 초대합니다.</p>
+                    <h3><br>- 장소 : 현대카드 COOKING LIBRARY</h3>
+                </div>
+            </div>
+
+            <div class="grid-item exhi">
+                <img src="img/program_exhi_4.jpg">
+                <div class="txt">
+                    <p>건축 & 디자인 필름 페스티벌(Architecture & Design Film Festival)은 미국에서 가장 큰 규모와 명성을 자랑하는 건축 필름 페스티벌이다.</p>
+                    <h3><br>- 장소 : 현대카드 DESIGN LIBRARY</h3>
+                </div>
+            </div> 
+
+            <div class="grid-item cook">
+                <img src="img/program_cooking_2.jpg">
+                <div class="txt">
+                    <p>요리에 재능과 열정이 있는 전문가가 준비한 쿠킹 클래스가 열린다. 현대카드 회원이라면 누구나 신청을 통해 참석해서 맛있는 조언들을 얻을 수 있다.</p>
+                    <h3><br>- 장소 : 현대카드 COOKING LIBRARY 3F/4F</h3>
+                </div>
+            </div>
+
+            <div class="grid-item cook">
+                <img src="img/program_cooking_3.jpg">
+                <div class="txt">
+                    <p>요리에 재능과 열정이 있는 전문가가 준비한 쿠킹 클래스가 열린다. 현대카드 회원이라면 누구나 신청을 통해 참석해서 맛있는 조언들을 얻을 수 있다.</p>
+                    <h3><br>- 장소 : 현대카드 COOKING LIBRARY 3F/4F</h3>
+                </div>
+            </div>
+
+            <div class="grid-item talk">
+                <img src="img/program_talk_10.jpg">
+                <div class="txt">
+                    <p>우보농장 이근이 대표가 들려주는 한반도 토종쌀 되살리기 프로젝트와 토종쌀에서 영감을 받은 김형래 셰프가 함께 선보이는 맛있는 컬래버레이션.</p>
+                    <h3><br>- 장소 : 현대카드 COOKING LIBRARY</h3>
+                </div>
+            </div>
+
+            <div class="grid-item ment">
+                <img src="img/program_ment_4.jpg">
+                <div class="txt">
+                    <p>노출과 채도, 명도 등 어렵기만 했던 사진용어와 조작방법들을 쉽게 익히며 추억을 좀 더 선명하고 아름다운 색채로 남기는 방법을 배워보자.</p>
+                    <h3><br>- 장소 : 현대카드 TRAVEL LIBRARY 1층 북카페</h3>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="sect5">
+        <div class="f_bg">
+            <div class="footer">
+                <div class="f_top">
+                    <p><span>NOTIC</span>현대카드 DESIGN LIBRARY 11월 27일(수) ~ 28(목) 행사에 따른 단축운영 안내</p>
+                </div>
+                <hr>
+                <div class="f_bottom">
+                    <img src="img/foot_logo.png" alt="">
+                    <p class="f_text">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩 | 대표이사 정태영 사업자등록번호 213-86-15419 ⓒ HYUNDAI CARD Corp.</p>
+                </div>                   
+            </div>
+        </div>
     </section>
 </body>
 </html>
